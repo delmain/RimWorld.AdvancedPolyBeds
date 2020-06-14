@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Advanced Polyamory Beds</name>
+	<author>Inggo</author>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+	</supportedVersions>
+	<packageId>Inggo.AdvancedPolyBeds</packageId>
+	<description>Provides advanced triple, quadra, and penta beds for your loving pawns equipped with advanced spacer technology. 
+  Requires Vanilla Furniture Expanded - Spacer Module.
+  Also counts as a Royal Bed for your Royal Bedroom.</description>
+  <url>https://github.com/Inggo/RimWorld.AdvancedPolyBeds</url>
+  <modDependencies>
+    <li>
+      <packageId>VanillaExpanded.VFESpacer</packageId>
+      <displayName>Vanilla Furniture Expanded - Spacer Module</displayName>
+      <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079</downloadUrl>
+    </li>
+  </modDependencies>
+</ModMetaData>
