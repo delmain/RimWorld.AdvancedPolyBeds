@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingDef Name="AdvancedPolyBed" ParentName="ArtableBedBase" Abstract="True">
-	  <thingClass>MFSpacer.Building_RefreshingBed</thingClass>
+	  <thingClass>AdvancedPolyBeds.Building_RefreshingPolyBed</thingClass>
     <castEdgeShadows>True</castEdgeShadows>
     <statBases>
       <MaxHitPoints>150</MaxHitPoints><!-- 150 per slot -->
