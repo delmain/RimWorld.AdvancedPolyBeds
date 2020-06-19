@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>[JPT] Soft Warm Beds</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Polyamory Beds (Vanilla Edition)</li>
+      </mods>
+      <match Class="PatchOPerationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name="AdvancedPolyBed"]</xpath>
+            <value>
+              <inspectorTabs>
+                <li>SoftWarmBeds.ITab_Bedding</li>
+              </inspectorTabs>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name="AdvancedPolyBed"]/building</xpath>
+            <value>
+              <fixedStorageSettings>
+                <filter>
+                  <categories>
+                    <li>Textiles</li>
+                  </categories>
+                </filter>
+              </fixedStorageSettings>
+              <defaultStorageSettings>
+                <filter>
+                  <categories>
+                    <li>Textiles</li>
+                  </categories>
+                </filter>
+              </defaultStorageSettings>
+            </value>
+          </li>
+
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Bed_AdvTripleBed"]/graphicData/texPath</xpath>
+            <value>
+              <texPath>SoftWarmBeds/RBed3/RBed3</texPath>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Bed_AdvQuadraBed"]/graphicData/texPath</xpath>
+            <value>
+              <texPath>SoftWarmBeds/RBed4/RBed4</texPath>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="Bed_AdvPentaBed"]/graphicData/texPath</xpath>
+            <value>
+              <texPath>SoftWarmBeds/RBed5/RBed5</texPath>
+            </value>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bed_AdvTripleBed"]</xpath>
+            <value>
+              <comps>
+                <li Class="SoftWarmBeds.CompProperties_MakeableBed">
+                  <blanketDef>TripleRoyalBlanket</blanketDef>
+                  <beddingDef>TripleBedding</beddingDef>
+                </li>
+              </comps>
+            </value>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bed_AdvQuadraBed"]</xpath>
+            <value>
+              <comps>
+                <li Class="SoftWarmBeds.CompProperties_MakeableBed">
+                  <blanketDef>QuadRoyalBlanket</blanketDef>
+                  <beddingDef>QuadBedding</beddingDef>
+                </li>
+              </comps>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bed_AdvPentaBed"]</xpath>
+            <value>
+              <comps>
+                <li Class="SoftWarmBeds.CompProperties_MakeableBed">
+                  <blanketDef>PentaRoyalBlanket</blanketDef>
+                  <beddingDef>PentaBedding</beddingDef>
+                </li>
+              </comps>
+            </value>
+          </li>
+
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="AdvancedPolyBed"]/statBases/BedRestEffectiveness</xpath>
+            <value>
+              <BedRestEffectiveness>0.7</BedRestEffectiveness>
+            </value>
+          </li>
+
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="AdvancedPolyBed"]/statBases/Comfort</xpath>
+            <value>
+              <Comfort>0.55</Comfort>
+            </value>
+          </li>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[@Name="AdvancedPolyBed"]/statBases</xpath>
+            <value>
+              <BedStuffEffectMultiplierInsulation_Cold>0.6</BedStuffEffectMultiplierInsulation_Cold>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

@@ -41,6 +41,7 @@
       <bed_showSleeperBody>false</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
     </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <fillPercent>0.4</fillPercent>
     <pathCost>60</pathCost>
     <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
