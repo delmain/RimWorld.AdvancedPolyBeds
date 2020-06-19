@@ -6,9 +6,10 @@
 		<li>1.1</li>
 	</supportedVersions>
 	<packageId>Inggo.AdvancedPolyBeds</packageId>
-	<description>Provides advanced triple, quadra, and penta beds for your loving pawns equipped with advanced spacer technology. 
+	<description>Provides advanced triple, quadra, and penta beds for your loving pawns equipped with advanced spacer technology.
   Requires Vanilla Furniture Expanded - Spacer Module.
-  Also counts as a Royal Bed for your Royal Bedroom.</description>
+  Counts as a Royal Bed for your royal bedroom with the Royalty DLC if you have Multi-Bed Royalty Patch installed.
+  Compatible with [JPT] Soft Warm Beds by jptrrs IF you also have Polyamory Beds Vanilla Edition by Meltup installed. Load this mod after Soft Warm Beds and Polyamory Beds Vanilla Edition.</description>
   <url>https://github.com/Inggo/RimWorld.AdvancedPolyBeds</url>
   <modDependencies>
     <li>
@@ -17,4 +18,10 @@
       <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079</downloadUrl>
     </li>
   </modDependencies>
+	<loadAfter>
+	  <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Meltup.PolyamoryBeds.Vanilla</li>
+    <li>JPT.SoftWarmBeds</li>
+  </loadAfter>
 </ModMetaData>

@@ -10,6 +10,65 @@
       </mods>
       <match Class="PatchOPerationSequence">
         <operations>
+
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ThingDef ParentName="BlanketBase">
+                <defName>TripleAdvancedBlanket</defName>
+                <label>triple advanced blanket</label>
+                <graphicData>
+                  <texPath>Things/Furniture/SoftWarmBeds/Blankets/AdvancedTriple/AdvancedTriple</texPath>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <shaderType>CutoutComplex</shaderType>
+                  <drawSize>(3,2)</drawSize>
+                  <damageData>
+                    <rect>(0,0.05,3,1.95)</rect>
+                  </damageData>
+                </graphicData>
+                <size>(3,2)</size>
+              </ThingDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ThingDef ParentName="BlanketBase">
+                <defName>QuadAdvancedBlanket</defName>
+                <label>quadra advanced blanket</label>
+                <graphicData>
+                  <texPath>Things/Furniture/SoftWarmBeds/Blankets/AdvancedQuadra/AdvancedQuadra</texPath>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <shaderType>CutoutComplex</shaderType>
+                  <drawSize>(4,2)</drawSize>
+                  <damageData>
+                    <rect>(0,0.05,4,1.95)</rect>
+                  </damageData>
+                </graphicData>
+                <size>(4,2)</size>
+              </ThingDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs</xpath>
+            <value>
+              <ThingDef ParentName="BlanketBase">
+                <defName>PentaAdvancedBlanket</defName>
+                <label>penta advanced blanket</label>
+                <graphicData>
+                  <texPath>Things/Furniture/SoftWarmBeds/Blankets/AdvancedPenta/AdvancedPenta</texPath>
+                  <graphicClass>Graphic_Multi</graphicClass>
+                  <shaderType>CutoutComplex</shaderType>
+                  <drawSize>(5,2)</drawSize>
+                  <damageData>
+                    <rect>(0,0.05,5,1.95)</rect>
+                  </damageData>
+                </graphicData>
+                <size>(5,2)</size>
+              </ThingDef>
+            </value>
+          </li>
+
           <li Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[@Name="AdvancedPolyBed"]</xpath>
             <value>
@@ -41,28 +100,28 @@
           <li Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="Bed_AdvTripleBed"]/graphicData/texPath</xpath>
             <value>
-              <texPath>SoftWarmBeds/RBed3/RBed3</texPath>
+              <texPath>Things/Furniture/SoftWarmBeds/Beds/AdvancedTriple/AdvancedTriple</texPath>
             </value>
           </li>
           <li Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="Bed_AdvQuadraBed"]/graphicData/texPath</xpath>
             <value>
-              <texPath>SoftWarmBeds/RBed4/RBed4</texPath>
+              <texPath>Things/Furniture/SoftWarmBeds/Beds/AdvancedQuadra/AdvancedQuadra</texPath>
             </value>
           </li>
           <li Class="PatchOperationReplace">
             <xpath>Defs/ThingDef[defName="Bed_AdvPentaBed"]/graphicData/texPath</xpath>
             <value>
-              <texPath>SoftWarmBeds/RBed5/RBed5</texPath>
+              <texPath>Things/Furniture/SoftWarmBeds/Beds/AdvancedPenta/AdvancedPenta</texPath>
             </value>
           </li>
 
           <li Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="Bed_AdvTripleBed"]</xpath>
             <value>
-              <comps>
+              <comps Inherit="True">
                 <li Class="SoftWarmBeds.CompProperties_MakeableBed">
-                  <blanketDef>TripleRoyalBlanket</blanketDef>
+                  <blanketDef>TripleAdvancedBlanket</blanketDef>
                   <beddingDef>TripleBedding</beddingDef>
                 </li>
               </comps>
@@ -72,9 +131,9 @@
           <li Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="Bed_AdvQuadraBed"]</xpath>
             <value>
-              <comps>
+              <comps Inherit="True">
                 <li Class="SoftWarmBeds.CompProperties_MakeableBed">
-                  <blanketDef>QuadRoyalBlanket</blanketDef>
+                  <blanketDef>QuadAdvancedBlanket</blanketDef>
                   <beddingDef>QuadBedding</beddingDef>
                 </li>
               </comps>
@@ -83,9 +142,9 @@
           <li Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="Bed_AdvPentaBed"]</xpath>
             <value>
-              <comps>
+              <comps Inherit="True">
                 <li Class="SoftWarmBeds.CompProperties_MakeableBed">
-                  <blanketDef>PentaRoyalBlanket</blanketDef>
+                  <blanketDef>PentaAdvancedBlanket</blanketDef>
                   <beddingDef>PentaBedding</beddingDef>
                 </li>
               </comps>
