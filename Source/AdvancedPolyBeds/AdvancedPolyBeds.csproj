@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\v1.1\Assemblies\</OutputPath>
+    <OutputPath>..\..\v1.2\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -37,7 +37,6 @@
     </Reference>
     <Reference Include="MFSpacer">
       <HintPath>..\..\..\..\..\..\workshop\content\294100\2028381079\1.1\Assemblies\MFSpacer.dll</HintPath>
-      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
