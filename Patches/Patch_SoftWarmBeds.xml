@@ -8,7 +8,7 @@
       <mods>
         <li>Polyamory Beds (Vanilla Edition)</li>
       </mods>
-      <match Class="PatchOPerationSequence">
+      <match Class="PatchOperationSequence">
         <operations>
 
           <li Class="PatchOperationAdd">

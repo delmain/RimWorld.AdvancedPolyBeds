@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="AdvancedPolyBed_Triple">
+        <thingClass>Ogre.NanoRepairTech.NanoBed</thingClass>
+        <defName>Bed_AdvTripleBed_NanoTech</defName>
+        <label>nano tech advanced triple bed</label>
+        <description>A simple triple-wide bed that fits three people. Slowly repairs damage to equipped apparel/weaponry.</description>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>60</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>0</fuelConsumptionRate>
+                <fuelCapacity>75.0</fuelCapacity>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Ogre_NanoTechFuel</li>
+                    </thingDefs>
+                </fuelFilter>
+            </li>
+        </comps>
+        <statBases>
+            <Ogre_NanoApparelRate>0</Ogre_NanoApparelRate>
+            <Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
+        </statBases>
+        <costStuffCount>210</costStuffCount>
+        <costList>
+            <ComponentIndustrial>6</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+            <Steel>120</Steel>
+            <Plasteel>45</Plasteel>
+            <Uranium>15</Uranium>
+        </costList>
+        <researchPrerequisites>
+            <li>Ogre_NanoTech</li>
+        </researchPrerequisites>
+        <designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
+    </ThingDef>
+    <ThingDef ParentName="AdvancedPolyBed_Quadra">
+        <thingClass>Ogre.NanoRepairTech.NanoBed</thingClass>
+        <defName>Bed_AdvQuadraBed_NanoTech</defName>
+        <label>nano tech advanced quadra bed</label>
+        <description>A simple quadra-wide bed that fits four people. Slowly repairs damage to equipped apparel/weaponry.</description>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>60</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>0</fuelConsumptionRate>
+                <fuelCapacity>100.0</fuelCapacity>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Ogre_NanoTechFuel</li>
+                    </thingDefs>
+                </fuelFilter>
+            </li>
+        </comps>
+        <statBases>
+            <Ogre_NanoApparelRate>0</Ogre_NanoApparelRate>
+            <Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
+        </statBases>
+        <costStuffCount>280</costStuffCount>
+        <costList>
+            <ComponentIndustrial>8</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Steel>160</Steel>
+            <Plasteel>60</Plasteel>
+            <Uranium>20</Uranium>
+        </costList>
+        <researchPrerequisites>
+            <li>Ogre_NanoTech</li>
+        </researchPrerequisites>
+        <designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
+    </ThingDef>
+    <ThingDef ParentName="AdvancedPolyBed_Penta">
+        <thingClass>Ogre.NanoRepairTech.NanoBed</thingClass>
+        <defName>Bed_AdvPentaBed_NanoTech</defName>
+        <label>nano tech advanced penta bed</label>
+        <description>A simple penta-wide bed that fits five people. Slowly repairs damage to equipped apparel/weaponry.</description>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>60</basePowerConsumption>
+                <shortCircuitInRain>false</shortCircuitInRain>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>0</fuelConsumptionRate>
+                <fuelCapacity>125.0</fuelCapacity>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>Ogre_NanoTechFuel</li>
+                    </thingDefs>
+                </fuelFilter>
+            </li>
+        </comps>
+        <statBases>
+            <Ogre_NanoApparelRate>0</Ogre_NanoApparelRate>
+            <Ogre_NanoWeaponsRate>0</Ogre_NanoWeaponsRate>
+        </statBases>
+        <costStuffCount>280</costStuffCount>
+        <costList>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>5</ComponentSpacer>
+            <Steel>200</Steel>
+            <Plasteel>75</Plasteel>
+            <Uranium>25</Uranium>
+        </costList>
+        <researchPrerequisites>
+            <li>Ogre_NanoTech</li>
+        </researchPrerequisites>
+        <designationCategory>Ogre_NanoRepairTech_DesignationCategory</designationCategory>
+    </ThingDef>
+</Defs>

@@ -56,7 +56,7 @@
     <defaultPlacingRot>South</defaultPlacingRot>
   </ThingDef>
 
-  <ThingDef ParentName="AdvancedPolyBed">
+  <ThingDef ParentName="AdvancedPolyBed" Name="AdvancedPolyBed_Triple">
     <defName>Bed_AdvTripleBed</defName>
     <label>advanced triple bed</label>
     <description>A powered high-tech triple bed that automatically readjusts itself to perfectly fit the contours of all sleepers, with built in white noise generation. Sleepers often report feeling refreshed and more alert the morning after.</description>
@@ -80,7 +80,7 @@
     <costStuffCount>180</costStuffCount><!-- 60 per space -->
   </ThingDef>
 
-  <ThingDef ParentName="AdvancedPolyBed">
+  <ThingDef ParentName="AdvancedPolyBed" Name="AdvancedPolyBed_Quadra">
     <defName>Bed_AdvQuadraBed</defName>
     <label>advanced quadra bed</label>
     <description>A powered high-tech quadra bed that automatically readjusts itself to perfectly fit the contours of all sleepers, with built in white noise generation. Sleepers often report feeling refreshed and more alert the morning after.</description>
@@ -104,7 +104,7 @@
     <costStuffCount>240</costStuffCount><!-- 60 per space -->
   </ThingDef>
 
-  <ThingDef ParentName="AdvancedPolyBed">
+  <ThingDef ParentName="AdvancedPolyBed" Name="AdvancedPolyBed_Penta">
     <defName>Bed_AdvPentaBed</defName>
     <label>advanced penta bed</label>
     <description>A powered high-tech penta bed that automatically readjusts itself to perfectly fit the contours of all sleepers, with built in white noise generation. Sleepers often report feeling refreshed and more alert the morning after.</description>
